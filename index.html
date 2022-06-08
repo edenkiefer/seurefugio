@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Seu Refúgio</title>
+    
+</head>
+<body>
+    <header class="cabecalho">
+        <div>
+            <img onclick="changeContainer('home')" src="./static/logo-branca.png" alt="logo">
+        </div>
+        <div class="opcoes-cabecalho">
+            <span onclick="changeContainer('home')">Home</span>
+            <span onclick="changeContainer('help')">Ajuda as refugiadas</span>
+            <span class="contato" onclick="changeContainer('contact')">Contato</span>
+        </div> 
+    </header>
+    <div class="container">
+        <div id="home">
+            <h1>Ajude uma refugiada a encontrar um lar</h1>
+            <p>Somos uma ONG que ajuda as refugiadas a encontrarem um abrigo nesse momento complicado. Para ajudar ou saber mais informações clique no botão abaixo.</p>
+            <button onclick="changeContainer('help')">Clique aqui</button>
+            
+        </div>
+        <div id="help">
+            <h1>Já são milhares de refugiadas ajudadas</h1>
+            <p>Nós conseguimos ajudar milhares de refugiadas e seus filhos, no total são mais de <b id="peapleHelped">10000</b>, venha contribuir também.</p>
+            <p>Cadastre-se como uma anfitriã e ajude milhares de refugiadas a encontrarem um lar.</p>
+            <button>Cadastre-se</button>
+            <p>Se não puder receber alguém em sua casa e quer ajudar de outra forma entre em contato conosco.</p>
+            <button onclick="changeContainer('contact')">Contato</button>
+        </div>
+        <div id="contact">
+            <h1>Nos contate por esses canais</h1>
+            <p><b>Whatsapp:</b> 27 99999-9999</p>
+            <p><b>E-mail:</b> seurefugio@gmail.com</p>
+            <p><b>Instagram:</b> @seurefugio</p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

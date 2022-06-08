@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.cabecalho {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7317cf;
+}
+
+.cabecalho > div {
+    margin: 30px;
+}
+
+.cabecalho > div > img {
+    height: 55px;
+    width: auto;
+    cursor: pointer;
+}
+
+.opcoes-cabecalho > span {
+    margin: 3px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #FFF;
+    transition: 0.5s;
+}
+
+.opcoes-cabecalho > span:hover {
+    color: #d5b8f1;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.container {
+    width: 70%;
+    margin: 8% 15% 8% 15%;
+}
+
+.container > * > h1 {
+    font-size: 90px;
+    color: #a465e0; 
+}
+
+.container > * > p {
+    font-size: 50px;
+    color: #CCC;
+}
+
+.container > * > button {
+    font-size: 30px;
+    padding: 20px 32px;
+    background-color: #7317cf;
+    color: #FFF;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container > button:hover {
+    background-color: #a465e0;
+}
+
+.container > * > * {
+    margin-bottom: 30px;
+}
+
+#help {
+    display: none;
+}
+
+#contact {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .cabecalho > div {
+        margin: 20px;
+    }
+    
+    .container {
+        width: 95%;
+        margin: 5%;
+    }
+    .container > * > h1 {
+        font-size: 52px;
+    }
+
+    .container > * > p {
+        font-size: 26px;
+    }
+
+    .opcoes-cabecalho > span {
+        display: none;
+    }
+
+    .contato {
+        display: block!important;
+    }
+
+}
