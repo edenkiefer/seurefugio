@@ -1,6 +1,6 @@
 # seurefugio
 
-Documentação do script.js
+## Documentação do script.js
 
 Esse bloco de código faz uma simulação do que seria a quantidade de pessoas ajudadas em tempo real.
 Primeiro declaro uma variável que vai armazenar a quantidade de pessoas ajudadas, depois um temporizador onde ele aumenta a quantidade de pessoas ajudadas randomicamente com a função ```Math.random().```
